@@ -1,3 +1,5 @@
+// Was updated on 2020-09-02
+
   //<![CDATA[
 
   if (document.querySelectorAll(".home").length > 0) {
