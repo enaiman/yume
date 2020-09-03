@@ -1,3 +1,3 @@
-# yume-public
+# YUME 
 
 Nothing much here
