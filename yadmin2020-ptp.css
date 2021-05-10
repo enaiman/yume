@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i&display=swap&subset=latin-ext');
+/* GENERAL */
+body {
+ font-family: "Source Sans Pro", sans-serif;
+ color: #0a0a0a;
+ font-size: 16px;
+}
+/* HEADER */
+header {
+ background: #8197e6;
+ color: #fff;
+ border: none;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: space-between;
+}
+header nav {
+ float: none;
+}
+header .widther h1 {
+ display: none;
+}
+header li:last-child {
+ box-shadow:
+  -1px 0 0 0 rgba(0, 0, 0, 0.1), inset 1px 0 0 0 rgba(255, 255, 255, .1),
+  1px 0 0 0 rgba(255, 255, 255, 0.1), inset -1px 0 0 0 rgba(0, 0, 0, .1);
+}
+header li:empty {
+	display: none;
+}
+header li {
+ margin-left: 0;
+ box-shadow: -1px 0 0 0 rgba(0, 0, 0, 0.1), inset 1px 0 0 0 rgba(255, 255, 255, .1);
+ background: transparent;
+}
+header li a {
+ color: #fff;
+}
+header li:hover {
+ background: rgba(255, 255, 255, .15);
+}
+/* CONTENT */
+.widther {
+ width: auto;
+ max-width: 1500px;
+}
+#content {
+	border: none;
+}
+.tag-search, #sort-filter .newest-accounts {
+	display: none;
+}
+#sort-filter {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+#sort-filter > * {
+    float: none !important;
+}
+.search input[type="search"] {
+	width: 400px;
+}
+/* ACCOUTNS */
+.details:after {
+    display: table;
+    content: "";
+    clear: both;
+}
+div[class*="platform_"] {
+	background-size: contain !important;
+    background-blend-mode: color;
+    background-color: rgba(255, 255, 255, 0.8) !important;
+}
+#customers .account .details { width: auto; padding: 1rem 0; }
+#customers .account .details .basic, #customers .account .details .reviews {
+ width: 20%;
+ padding: 0;
+}
+#customers .account .details .basic .name {
+	display: flex;
+	align-items: center;
+}
+#customers .account .details .tabbable { width: 60%; }
+.tabbable .nav {
+ margin-bottom: 0;
+}
+.tabbable .tab-content {
+ padding: .5em;
+ min-height: 200px;
+ height: auto !important;
+}
+.tabbable .nav-tabs>li, .tabbable .nav-pills>li {
+ 
+}
+
+.tabbable {
+ height: auto !important;
+ backdrop-filter: blur(5px);
+}
+
+.tabbable:after {
+ content: '';
+ clear: both;
+ display: table;
+}
+
+ul.dates li {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed #aaa;
+    padding: .25rem 0;
+}
+
+/* ACCOUNT TAGS */
+.tag {
+ font-size: .75rem;
+ border-radius: 1rem;
+ padding: .2em .5em;
+ color: #fff;
+ margin-right: .2em;
+}
+.tag:last-child {
+ margin-right: 0;
+}
+.tag.premium {
+ background: #dddd00;
+}
+
+/* PLATFORMS */
+div[class*="platform_"] .basic .name:before {
+	/*content: '';*/
+    padding: .15rem .35rem;
+    font-size: .6rem;
+    font-weight: bold;
+    margin-right: .5rem;
+}
+
+.platform_general .basic .name:before {
+	content: 'GENERAL';
+    background: #ddd;
+}
+
+.platform_shopify .basic .name:before {
+	content: 'SHOPIFY';
+    background: #93bf46;
+}
+
+.platform_woocommerce .basic .name:before {
+	content: 'WOOCOMMERCE';
+    background: #9c5e91;
+}
+
+.platform_bigcommerce .basic .name:before {
+	content: 'BIGCOMMERCE';
+    background: #34303f;
+    color: #fff;
+}
+
+.platform_volusion .basic .name:before {
+	content: 'VOLUSION';
+    background: #4dd0e2;
+}
+
+[class*="platform_magento"] .basic .name:before {
+	content: 'MAGENTO';
+    background: #f26321;
+}
+
+.platform_salesforce_marketing_cloud .basic .name:before {
+	content: 'SALESFORCE';
+    background: #02a2e0;
+}
+
+.platform_go_daddy_commerce .basic .name:before {
+	content: 'GODADDY';
+    background: #03a337;
+}
+
+.platform_unknown .basic .name:before {
+	content: '¯\\_(ツ)_/¯';
+    background: #ded;
+}
